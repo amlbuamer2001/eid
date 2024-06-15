@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap');
+
+@font-face {
+    font-family: atiq;
+    src: url(./../fonts/TSAteq-Wide.otf);
+}
 
 #main-section {
     background-image: url('./../images/White and Green Illustrative Happy Eid Al-Adha Card (15).png');
@@ -54,7 +60,7 @@
 /* Expanding image text positions */
 #imgtext1 {
     position: absolute;
-    left: 0%;
+    left: 5px;
     color: #013C72;
     font-size: 30px;
     text-align: center;
@@ -65,9 +71,11 @@
 
 #imgtext2 {
     position: absolute;
-    right: 0;
-    color: #fff;
-    font-family: "Amiri", serif;
+    bottom: 150px !important;
+    left: 99px;
+    color: #E8AF7A;
+    font-family: "Mada", sans-serif;
+    font-weight: bold;
     font-size: 30px;
     width: 100%;
 }
@@ -85,11 +93,11 @@
 
 #imgtext4 {
     position: absolute;
-    bottom: 42px;
-    left: -175px;
-    color: #EDE0D8;
-    font-size: 20px;
-    font-family: "Noto Nastaliq Urdu", serif;
+    bottom: 168px;
+    left: -15px;
+    color: #1F4A5D;
+    font-size: 40px;
+    font-family: 'atiq';
     font-weight: bold;
     width: 100%;
 }
@@ -372,27 +380,20 @@ input:hover {
     }
 
     #imgtext2 {
-        bottom: 150px;
-        font-size: 26px;
+        bottom: 105px !important;
+        left: 16vw;
+        font-size: 22px;
     }
+
     #imgtext3 {
         top: 50px;
         right: 0px;
     }
-    #imgtext4 {
-        left: -92px;
-    }
-}
 
-@media (min-width: 340px) and (max-width: 390px) {
     #imgtext4 {
-        left: -90px;
-    }
-}
-
-@media (min-width: 391px) and (max-width: 480px) {
-    #imgtext4 {
-        left: -106px;
+        left: -6px;
+        bottom: 104px;
+        font-size: 35px;
     }
 }
 
@@ -445,13 +446,29 @@ input:hover {
         bottom: 150px;
     }
 
-    #imgtext2 {
-        bottom: 188px;
-        font-size: 30px;
-    }
     #imgtext3 {
         bottom: 60px;
         right: 0px;
+    }
+
+    #imgtext4 {
+        bottom: 138px;
+    }
+}
+
+@media (min-width:481px) and (max-width: 580px) {
+    #imgtext2 {
+        bottom: 136px !important;
+        left: 16vw;
+        font-size: 26px;
+    }
+}
+
+@media (min-width:581px) and (max-width: 768px) {
+    #imgtext2 {
+        bottom: 136px !important;
+        left: 85px;
+        font-size: 27px;
     }
 }
 
@@ -489,9 +506,6 @@ input:hover {
         bottom: 170px;
     }
 
-    #imgtext2 {
-        bottom: 213px;
-    }
     #imgtext3 {
         bottom: 60px;
         right: 0;
@@ -524,9 +538,6 @@ input:hover {
         bottom: 170px !important;
     }
 
-    #imgtext2 {
-        bottom: 213px !important;
-    }
     #imgtext3 {
         bottom: 60px;
         right: 0;
@@ -547,13 +558,6 @@ input:hover {
         bottom: 170px !important;
     }
 
-    #imgtext2 {
-        bottom: 213px !important;
-    }
-
-    #imgtext2 {
-        bottom: 213px !important;
-    }
     #imgtext3 {
         bottom: 60px;
         right: 0;
